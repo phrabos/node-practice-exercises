@@ -5,6 +5,7 @@ const tours = JSON.parse(
 );
 
 const checkID = (req, res, next, val) => {
+  console.log(val);
   const id = +val;
   const tour = tours.find((el) => el.id === id);
   if (!tour) {
