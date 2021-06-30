@@ -15,8 +15,7 @@ fs.readFile('./txt/start.txt', 'utf-8', (err, data1) => {
         fs.readFile(`./txt/${data1}.txt`, 'utf-8', (err, data4) => {
           console.log(data4)
         })
-
-    })
+      });
     });
   });
 });
